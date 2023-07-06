@@ -1,0 +1,23 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #29263e;
+  padding: 1rem;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+li{
+  padding: 1rem;
+  border-radius: 5px;
+}
+li:hover{
+  background-color: #363250;
+  cursor: pointer;
+}

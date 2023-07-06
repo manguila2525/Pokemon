@@ -1,0 +1,59 @@
+::-webkit-scrollbar {
+  width: 5px; /* Ancho de la barra de scroll */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Color de fondo de la pista */
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: rgb(86, 86, 86); /* Color del indicador de scroll */
+}
+.card{
+  border: solid;
+  min-width: 200px;
+  flex-grow: 1;
+  height: 400px;
+  padding: 20px 0 20px 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+.card__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:15px ;
+  text-transform: uppercase;
+  gap: 5px;
+}
+h2{
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+h3{
+  font-weight: 200;
+  color: var(--secondary);
+  margin: 5px 0;
+  line-height: 1.6rem;
+}
+.content__image{
+  display: flex;
+  width: 200px;
+  height: 150px;
+}
+img{
+/* position: absolute;
+top: -20px;
+right: -20px; */
+width: 100%;
+
+object-fit: cover;
+cursor: pointer;
+transition: all .2s ease-in-out;
+}
+img:hover{
+  transform: scale(1.3);
+}
